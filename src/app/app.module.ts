@@ -14,13 +14,9 @@ import { JwtInterceptor } from './services/jwt.interceptor';
 import { authService } from './services/auth.service';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { BlogComponent } from './pages/blog/blog.component';
-import { InnerMenuComponent } from './shared/inner-menu/inner-menu.component';
-import { WebServicePageComponent } from './pages/service-pages/web-service-page/web-service-page.component';
-import { MobileServicePageComponent } from './pages/service-pages/mobile-service-page/mobile-service-page.component';
-import { ContactComponent } from './pages/contact-pages/contact/contact.component';
 import { AngularButtonLoaderModule } from 'angular-button-loader';
+import { JobListComponent } from './pages/job-list/job-list.component';
+import { JobDetailComponent } from './pages/job-detail/job-detail.component';
 
 
 @NgModule({
@@ -29,12 +25,10 @@ import { AngularButtonLoaderModule } from 'angular-button-loader';
     MenuComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent,
-    BlogComponent,
-    InnerMenuComponent,
-    WebServicePageComponent,
-    MobileServicePageComponent,
-    ContactComponent
+    JobListComponent,
+    JobDetailComponent,
+    
+    
   
   
     

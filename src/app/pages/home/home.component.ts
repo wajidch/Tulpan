@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 declare var jquery: any;
 declare var $: any;
 @Component({
@@ -7,26 +8,53 @@ declare var $: any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  showHomeAndConactMenu: boolean;
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:1
-          },
-          1000:{
-              items:2
-          }
-      }
-  })
+    
   
   }
 
+
+  home(){
+    $("#home").addClass('active');
+    $("#about").removeClass('active');
+    $("#team").removeClass('active');
+    $("#job").removeClass('active');
+    $("#contact").removeClass('active');
+  }
+  about(){
+    $("#home").removeClass('active');
+    $("#about").addClass('active');
+    $("#team").removeClass('active');
+    $("#contact").removeClass('active');
+    $("#job").removeClass('active');
+  }
+  team(){
+    $("#home").removeClass('active');
+    $("#about").removeClass('active');
+    $("#team").addClass('active');
+    $("#contact").removeClass('active');
+    $("#job").removeClass('active');
+  }
+ 
+  contact(el: HTMLElement){
+    $("#home").removeClass('active');
+    $("#about").removeClass('active');
+    $("#team").removeClass('active');
+    $("#job").removeClass('active');
+    $("#contact").addClass('active');
+     el.scrollIntoView();
+
+  }
+  job(){
+    $("#home").removeClass('active');
+    $("#about").removeClass('active');
+    $("#team").removeClass('active');
+    $("#contact").removeClass('active');
+
+    $("#job").addClass('active');
+  }
 }

@@ -2,34 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Appflox</title>
+  <title>Beyond</title>
   <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="">
- 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./assets/css/animate.css">
-  
-  <!--Custom Styles-->
-  <link rel="stylesheet" href="./assets/scss/style.css" />
+
+<!-- Bootstrap Core CSS -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link href="./assets/css/style.css" rel="stylesheet" type="text/css">
 
 
 </head>
-<body class="menu-position-side menu-side-left full-screen with-content-panel">
+<body>
   <app-root></app-root>
   <!--Bootstrap Library JS-->
-<script type="application/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
-<script type="application/javascript" src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/owl.carousel.min.js"></script>
-<!--Custom JS-->
-    <script src="./assets/js/highlight.js"></script>
-    <script src="./assets/js/app.js"></script>
-    <!-- <script src="./assets/js/common.js"></script> -->
+
+
+ <!-- jQuery -->
+  
+ <script src="./assets/js/jquery-3.3.1.min.js"></script>
+ <!-- Bootstrap Core JavaScript -->
+ <script src="./assets/js/bootstrap.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+$(function () {
+$(document).scroll(function () {
+ var $nav = $(".fixed-top");
+ $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+});
+});
+</script>
+
+
 </body>
 </html>
