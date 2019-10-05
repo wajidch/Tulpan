@@ -266,83 +266,21 @@
   attitude, ethics and ability to power a game changer.</p>
   
   <div class="row mt-5">
-    <div class="col-lg-4 mb-3">
+    <div class="col-lg-4 mb-3" *ngFor='let list of teamlist'>
       <div class="bg-p">
         <div class="bg-av">
-        <img src="../../../assets/images/av1.png" class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
-        <h3 class="mt-n5">JESSICA MANINS</h3>
-        <p>CEO</p>
-        <p class="">Jessica is the tech-world’s least lazy person. She co-founded New Zealand’s virtual and mixed reality centre, helped establish The New Zealand VR/AR Association, and was a finalist in the science and technology category for Wellingtonian of The Year. To relax she seeks out vomit-inducing roller 
-  coasters, edgy theatre, and wild wonderful 
-  social adventures.</p>
+        <img src="../../../assets/images/{{list.profile_picture}}"
+         class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
+        <h3 class="mt-n5">{{list.name}}</h3>
+        <p>{{list.designation}}</p>
+        <p class="">{{list.description}}</p>
       </div>
     </div>
-    <div class="col-lg-4 mb-3">
-        <div class="bg-p">
-        <div class="bg-av">
-        <img src="../../../assets/images/av2.png" class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
-        <h3 class="mt-n5">ANTON MITCHELL</h3>
-        <p>COO</p>
-        <p class="">Anton is a tattooed, top-knotted, terrific individual. He is also co-founder and COO of Mixt, 
-  New Zealand’s leading interactive VR/AR 
-  development studio. Anton has been directing 
-  software and app development companies for fun for years, and pivoted to AR/VR development in 2015. He has never met a challenge he couldn’t 
-  delightfully obsess over.</p>
-      </div>
-  
-  
-    </div>
-    <div class="col-lg-4 mb-3">
-      
-        <div class="bg-p">
-        <div class="bg-av">
-        <img src="../../../assets/images/av3.png" class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
-        <h3 class="mt-n5">TIM RASTALL</h3>
-        <p>CTO</p>
-        <p class="">Tim is a technical polymath and wielder of our 
-  giantest brain. He has an obscene amount of 
-  experience leading software and hardware teams across multiple industries. He’s been working 
-  with VR, IOT and spatial technologies since 2015 and specialises in making nascent technologies into viable solutions. We wonder what other 
-  alchemy he’s capable of.</p>
-      </div>
-    </div>
+   
   
   </div>
   
-  <div class="row mt-5">
-  
-      <div class="col-lg-4 mb-3">
-        
-          <div class="bg-p">
-        <div class="bg-av">
-        <img src="../../../assets/images/av4.png" class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
-        <h3 class="mt-n5">ALEX COX</h3>
-        <p>Game Developer</p>
-        <p class="">Alex is a simulation. Every action to this point, which mainly involved gaming, has been in 
-  preparation to make this game, our game, the only game. His soul is pure. Incorruptible. He is our ace in the hole. He believes VR is the future of gaming. He is exactly where he needs to be, fulfilling the promise of VR by building this game.</p>
-      </div>
-      </div>
-        <div class="col-lg-4 mb-3">
-            <div class="bg-p">
-        <div class="bg-av">
-        <img src="../../../assets/images/av5.png" class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
-        <h3 class="mt-n5">KEVIN DEPUE</h3>
-        <p>Engine Programmer</p>
-        <p class="">An engine programmer of the highest calibre and game industry veteran, trapped inside a not very veteran body. Kevin’s claim to fame is that he shipped NinJump, the #1 iOS title, when he was the 7th person employed at Backflip Studios. We love his travel stories and endless passion for nature, philosophy, art, friends and the moment.</p>
-      </div>
-        </div>
-          <div class="col-lg-4 mb-3">
-              <div class="bg-p">
-        <div class="bg-av">
-        <img src="../../../assets/images/av6.png" class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
-        <h3 class="mt-n5">CHRIS GARNIER</h3>
-        <p>Level Designer</p>
-        <p class="">A Senior Game Designer for 15 years, working on several high profile titles such as Bioshock Infinite, Rainbow six: Siege, For Honor, and more. He 
-  recently made the jump to the MR world, after 
-  releasing Dr Grordbort’s Invaders on Magic Leap. We’re in awe of his magician-like skills, dry wit and wide ranging use of the english dictionary.</p>
-      </div>
-          </div>
-  </div>
+ 
   </div>
     </div>
     

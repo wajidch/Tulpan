@@ -48,12 +48,10 @@
   <section id="section-j1" class="">
   <div class="container ">
     <h2 class="text-white text-uppercase">HIRING NOW <br>
-  Senior Game DEVELOPER</h2>
-    <p class="text-white">We have an exciting new game about to start development! Two studios, M Theory & Oddboy, have collaborated to develop Wanderer - a virtual reality time-travel adventure game. We’re looking for a switched on senior game developer to lead a team of four in beautiful and vibrant Auckland (NZ) for the duration of the 18-24 month project (with potential extension options). </p>
+  {{jobdetail?.title}}</h2>
+    <p class="text-white">{{jobdetail?.description}}</p>
   
-  <p class="text-white">Our ideal candidate has a strong development background in Unreal Engine, C++ and blueprinting, and a passion for VR and adventure games. If you love working in a fun and collaborative environment, come join our team and help make our vision for a truly exciting VR game come to life.  
-  
-  </p>
+ 
   
   <div class="row mt-5 jb-txt pt-5">
     <div class="col-lg-6">
@@ -62,20 +60,14 @@
      <div class="col-lg-6">
        <h3 class="clr-p text-uppercase">Skills & responsibilities</h3>
        <ul class="text-white">
-         <li class="pb-2">Ability to Inspire and lead a team, have good work ethic and be a good team role model</li>
-  <li class="pb-2">Instill a high level of code quality and technical innovation while promoting best practices with other team members</li>
-  <li class="pb-2">Ability to prioritise and respond to change in order to meet deadlines</li>
-  <li class="pb-2">Good analytical and problem solving skills</li>
-  <li class="pb-2">Collaborate closely with other disciplines</li>
+         <li class="pb-2">{{jobdetail?.skill}}</li>
+ 
        </ul>
   
           <h3 class="clr-p text-uppercase mt-5">TECHNICAL REQUIREMENTS</h3>
        <ul class="text-white">
-         <li class="pb-2">Strong knowledge of Unreal Engine 4 and excellent proficiency in C++ and blueprinting</li>
-  <li class="pb-2">Must have shipped at least 1 desktop or console title (Bonus if : PSVR or other VR platforms)</li>
-  <li class="pb-2">3+ years of game industry experience</li>
-  <li class="pb-2">Experience optimizing memory and space usage</li>
-  <li class="pb-2">roficient knowledge of code versioning tools such as Perforce, Git, SVN, and Mercurial</li>
+         <li class="pb-2">{{jobdetail?.technical_description}}</li>
+  
        </ul>
   
        <p class="mt-5 text-white">This is an exciting opportunity for someone looking for their next challenge. We’re a passionate group of storytellers, creatives, and developers and we encourage applications of a diverse range.</p> 
@@ -88,8 +80,8 @@
     <div class="media">
     <i class="fa fa-gamepad mr-3 fs-size" aria-hidden="true"></i>
     <div class="media-body">
-      <h6 class="mt-0 mb-0">Senior Game</h6>
-    <h4>DEVELOPER</h4>
+      <h6 class="mt-0 mb-0">{{jobdetail?.title}}</h6>
+    
     </div>
   </div>
   <h4 class="font-weight-bold pl-4 mb-0">Send us your CV to apply</h4>

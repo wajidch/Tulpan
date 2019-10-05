@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { apiService } from 'src/app/services/api.service';
 declare var jquery: any;
 declare var $: any;
 @Component({
@@ -9,14 +10,22 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
   showHomeAndConactMenu: boolean;
-
-  constructor(public router: Router) { }
+teamlist:any;
+  constructor(public router: Router,private apiservice:apiService) { }
 
   ngOnInit() {
     
+    this.getTeam();
   
   }
 
+  getTeam(){
+
+    this.apiservice.get("job/teamList").subscribe((res:any)=>{
+
+      this.teamlist=res.body.response;
+    })
+  }
 
   home(){
     $("#home").addClass('active');

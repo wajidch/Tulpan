@@ -52,170 +52,29 @@
    overheads and setup times for licensees.</p>
    
    <div class="row mt-5">
-     <div class="col-lg-3 mb-3">
-      <a href="jobdetail" class="text-dark">
+     <div class="col-lg-3 mb-3" *ngFor='let list of joblist'>
+      <a href="jobdetail?job_id={{list.id}}" class="text-dark">
        <div class="bg-white h-bx">
-         <img src="../../../assets/images/c1.png" class="img-fluid d-block m-auto" alt="">
+         <img src="../../../assets/images/{{list.ads_picture}}" class="img-fluid d-block m-auto" alt="">
          <div class="p-4">
-           <h4 class="text-uppercase">SENIOR GAME <br>
-   DEVELOPER</h4>
+           <h4 class="text-uppercase">{{list.title}}<br></h4>
    <p>We’re looking for a switched on senior game developer to lead a team of four in beautiful and vibrant Auckland (NZ).</p>
    
-   <a href='jobdetail' class="text-dark">
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-pr">Learn More</button></a>
-         </div>
-       </div>
-       </a>
-     </div>
-      <div class="col-lg-3 mb-3">
-        <a href="jobdetail" class="text-dark">
-          <div class="bg-white h-bx">
-         <img src="../../../assets/images/c2.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">Intermediate  <br>
-   game developer</h4>
-   <p>We’re looking for a switched on game developer to join a team of passionate artists, designers and developers in
-   beautiful and vibrant Auckland (NZ).</p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-o">Learn More</button>
-         </div>
-       </div>
-       </a>
-      </div>
-       <div class="col-lg-3 mb-3">
-         <a href="jobdetail" class="text-dark">
-           <div class="bg-white h-bx">
-         <img src="../../../assets/images/c3.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">TECHNICAL <br>
-   ARTIST
-   </h4>
-   <p>We’re looking for a switched on technical artist to bring their flair and creativity to the team in beautiful and vibrant Auckland (NZ).</p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-db">Learn More</button>
-         </div>
-       </div>
-       </a>
-       </div>
-        <div class="col-lg-3 mb-3">
-          <a href="jobdetail" class="text-dark">
-            <div class="bg-white h-bx">
-         <img src="../../../assets/images/c4.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">GAME WRITER / <br>
-   NARRATIVE DESIGNER</h4>
-   <p>We’re looking for a switched on writer to bring their flair and creativity to the team for a 4-6 month project (approx Aug-Dec).</p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-bp">Learn More</button>
-         </div>
-       </div>
-       </a>
-        </div>
-   
-   
-   
-          <div class="col-lg-3 mb-3">
-            <a href="jobdetail" class="text-dark">
-            <div class="bg-white h-bx">
-         <img src="../../../assets/images/c5.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">PROJECT MANAGER / <br>
-   PRODUCER</h4>
-   <p>We’re looking for a switched on project manager to wrangle a team of passionate artists, designers and developers in beautiful and vibrant </p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-bp">Learn More</button>
-         </div>
-       </div>
-       </a>
-        </div>
-   
-   
-       <div class="col-lg-3 mb-3">
-         <a href="jobdetail" class="text-dark">
-           <div class="bg-white h-bx">
-         <img src="../../../assets/images/c6.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">INTERMEDIATE 3D <br>
-   ANIMATOR
-   </h4>
-   <p>We’re currently looking for a mid/senior animator to help bring our game to life here in beautiful, vibrant Auckland, NZ for a 6-12 month contract (approx Feb - August 2020).</p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-db">Learn More</button>
-         </div>
-       </div>
-       </a>
-       </div>
-   
-   
-   
-     <div class="col-lg-3 mb-3">
-       <a href="jobdetail" class="text-dark">
-          <div class="bg-white h-bx">
-         <img src="../../../assets/images/c7.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">UI/UX <br>
-   Designer</h4>
-   <p>We’re looking for a switched on technical artist to bring their flair and creativity to the team in beautiful and vibrant Auckland (NZ).</p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-o">Learn More</button>
-         </div>
-       </div>
-       </a>
-      </div>
-   
-   
-   
-    <div class="col-lg-3 mb-3">
-      <a href="jobdetail" class="text-dark">
-       <div class="bg-white h-bx">
-         <img src="../../../assets/images/c8.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">Python <br>
-   Developer </h4>
-   <p>We’re looking for a switched on writer to bring their flair and creativity to the team for a 4-6 month project (approx Aug-Dec).</p>
    
    <button type="button" class="btn btn-primary btn-af rounded-0 bg-pr">Learn More</button>
          </div>
        </div>
        </a>
      </div>
+     
    
    
    
    
-       <div class="col-lg-3 mb-3">
-         <a href="jobdetail" class="text-dark">
-           <div class="bg-white h-bx">
-         <img src="../../../assets/images/c9.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">PHP <br>
-   Developer
-   </h4>
-   <p>We’re looking for a switched on game developer to join a team of passionate artists, designers and developers in
-   beautiful and vibrant Auckland (NZ).</p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-db">Learn More</button>
-         </div>
-       </div>
-       </a>
-       </div>
    
    
    
-     <div class="col-lg-3 mb-3">
-       <a href="jobdetail" class="text-dark">
-          <div class="bg-white h-bx">
-         <img src="../../../assets/images/c10.png" class="img-fluid d-block m-auto" alt="">
-         <div class="p-4">
-           <h4 class="text-uppercase">RUBY AND RAILS <br>
-   PROGRAMER</h4>
-   <p>We’re looking for a switched on technical artist to bring their flair and creativity to the team in beautiful and vibrant Auckland (NZ).</p>
-   
-   <button type="button" class="btn btn-primary btn-af rounded-0 bg-o">Learn More</button>
-         </div>
-       </div>
-       </a>
-      </div>
+     
    
    
    

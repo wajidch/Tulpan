@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { apiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-job-list',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-list.component.css']
 })
 export class JobListComponent implements OnInit {
+  joblist: any;
 
-  constructor() { }
+  constructor(private apiservice:apiService) { }
 
   ngOnInit() {
+    this.getJob();
   }
 
+
+  getJob(){
+
+    this.apiservice.get("job/jobList").subscribe((res:any)=>{
+
+      this.joblist=res.body.response;
+    })
+  }
 }
