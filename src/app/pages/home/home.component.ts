@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { apiService } from 'src/app/services/api.service';
+import { environment } from 'src/environments/environment';
 declare var jquery: any;
 declare var $: any;
 @Component({
@@ -11,6 +12,7 @@ declare var $: any;
 export class HomeComponent implements OnInit {
   showHomeAndConactMenu: boolean;
 teamlist:any;
+imgUrl=environment.imageUrl;
   constructor(public router: Router,private apiservice:apiService) { }
 
   ngOnInit() {
@@ -24,6 +26,7 @@ teamlist:any;
     this.apiservice.get("job/teamList").subscribe((res:any)=>{
 
       this.teamlist=res.body.response;
+      
     })
   }
 

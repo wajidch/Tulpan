@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl:'http://76840e36.ngrok.io/api/'
+  apiUrl:'http://localhost:5001/api/',
+  imageUrl:'http://localhost/upload/'
 };

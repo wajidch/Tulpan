@@ -269,7 +269,7 @@
     <div class="col-lg-4 mb-3" *ngFor='let list of teamlist'>
       <div class="bg-p">
         <div class="bg-av">
-        <img src="../../../assets/images/{{list.profile_picture}}"
+        <img src="{{imgUrl}}{{list.profile_picture}}"
          class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
         <h3 class="mt-n5">{{list.name}}</h3>
         <p>{{list.designation}}</p>

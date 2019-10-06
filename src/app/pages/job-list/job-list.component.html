@@ -55,7 +55,7 @@
      <div class="col-lg-3 mb-3" *ngFor='let list of joblist'>
       <a href="jobdetail?job_id={{list.id}}" class="text-dark">
        <div class="bg-white h-bx">
-         <img src="../../../assets/images/{{list.ads_picture}}" class="img-fluid d-block m-auto" alt="">
+         <img src="{{imgUrl}}{{list.ads_picture}}" class="img-fluid d-block m-auto" alt="">
          <div class="p-4">
            <h4 class="text-uppercase">{{list.title}}<br></h4>
    <p>We’re looking for a switched on senior game developer to lead a team of four in beautiful and vibrant Auckland (NZ).</p>
