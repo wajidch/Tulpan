@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { apiService } from 'src/app/services/api.service';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';   
+import { NgxSpinnerService } from 'ngx-spinner';
 declare var jquery: any;
 declare var $: any;
 @Component({
@@ -13,7 +14,8 @@ export class HomeComponent implements OnInit {
   showHomeAndConactMenu: boolean;
 teamlist:any;
 imgUrl=environment.imageUrl;
-  constructor(public router: Router,private apiservice:apiService) { }
+  constructor(public router: Router,private apiservice:apiService,
+    private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
     
@@ -22,11 +24,22 @@ imgUrl=environment.imageUrl;
   }
 
   getTeam(){
+    this.spinner.show();
+
+    
+  setTimeout(() => {
+    /** spinner ends after 5 seconds */
+    this.spinner.hide();
+  }, 3000);    
 
     this.apiservice.get("job/teamList").subscribe((res:any)=>{
 
       this.teamlist=res.body.response;
-      
+
+  setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 3000);      
     })
   }
 
