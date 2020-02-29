@@ -1,335 +1,381 @@
-<ngx-spinner>
-  <p style="font-size: 20px; color: white">Loading...</p>
-</ngx-spinner>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top d-none d-sm-block">
-	<div class="container">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#"><div class="logo"><img src="../../../assets/images/logo.png"  class="img-fluid" alt=""></div></a>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.../../../assets/js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Tulpan</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="../../../assets/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+      <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+   </head>
+   <!-- ------------------header-------------->
+   <body>
+  <nav class="navbar navbar-expand-md bg-white py-1 navbar-light fixed-top">
+         <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="">
+               <div class="logo"><img src="../../../assets/images/logo.png" class="img-fluid" alt=""></div>
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" id="btnTrigger" data-toggle="collapse" (click)="toggle()" data-target="#collapsibleNavbar">
+            <span class=""><i class="fa fa-align-left" aria-hidden="true"></i></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+             
+               <ul class="nav navbar-nav ml-auto">
+                   <li class="nav-item">
+                    <a href="" class="nav-link"> ﺔﻳﺪﻳﺮﺒﻟا ةﺮﺸﻨﻟا </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="" class="nav-link"> ﺔةنودملا  </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="" class="nav-link"> ﺔنابلوت نع  </a>
+                  </li>
+                   <li class="nav-item active">
+                    <a href="" class="nav-link"> الرئيسية  </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-   <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-          <a class="nav-link"  id='home' (click)='home()' href="#">Home   </a>
-        </li>
-		 <li class="nav-item ">
-        <a class="nav-link"    href="#section-1">About </a>
-      </li>
-	   <li class="nav-item">
-        <a class="nav-link"  id='team' (click)='team()' href="#section-4">  Team  </a>
-      </li> 
-     
-     
-     
-     
-       <li class="nav-item">
-        <a class="nav-link" style="cursor: pointer"     id='contact'  >  Contact </a>
-      </li> 
-	   <li class="nav-item">
-        <a class="nav-link"  id='job' (click)='job()' routerLink='joblist'>Jobs</a>
-      </li>
-    </ul>
 
+      <header class="">
+         <div class="container">
+          <div class="row">
+                <div class="col-md-6 text-right py-5 d-sm-block d-lg-none d-md-none">
+              <h1 class="text-center"> <span class="clr-dpink"></span>أفضل طريقة لإرسال الهدايا وباقات الزهور الطبيعية  <span class="clr-dpink">لأحبابكم </span> </h1>
+               <p class=" py-2 text-center"> أو قم بتنزيل تطبيق تولبان   </p>
+              
+              
+
+               <div class="text-center">
+                  <a href=""><img src="../../../assets/images/googleplay.png" class="img-fluid" style="width: 110px" alt=""></a>
+                  <a href=""><img src="../../../assets/images/app.png" class="img-fluid" style="width: 95px" alt=""></a>
+                  <br>
+                    <a href="" class=" btn btn-pink">نآلا قوست  </a>
+               </div>
+
+
+
+            </div>
+            <div class="col-md-6">
+              <img src="../../../assets/images/banner.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6 text-right py-5 mt-5 display-none">
+              <h1> <span class="clr-dpink"></span>أفضل طريقة لإرسال الهدايا وباقات الزهور الطبيعية  <span class="clr-dpink">لأحبابكم </span> </h1>
+               <a href="" class="db btn btn-pink">نآلا قوست  </a>
+               <p class="db pt-4 pb-3">انقيبطت ليزنتب مق وأ</p>
+
+               <div class="db">
+                  <a href=""><img src="../../../assets/images/googleplay.png" class="img-fluid" style="width: 110px" alt=""></a>
+                  <a href=""><img src="../../../assets/images/app.png" class="img-fluid" style="width: 95px" alt=""></a>
+               </div>
+
+            </div>
+          </div>
+         </div>
+      </header>
     
-  </div> 
+      <section id="section-1" class="">
+         <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-right">
+            <h2 class="clr-pink pt-5 display-none">اانترتخأ اذامل  </h2>
+            <p class="display-none">نمض ، قوستلاب نودعسيو نوعتمتسي انئالمع لعج ىلع اًمئاد يسيئرلا انزيكرتبصني .هاندأ تامدخلا مدقن ، فدهلا اذه</p>
+
+            <h2 class="clr-pink text-center d-sm-block d-lg-none d-md-none">لماذا متجر تولبان ؟  </h2>
+            <p class="text-center d-sm-block d-lg-none d-md-none">متجر الهدايا والزهور الأشمل على الإطلاق   <br>حيث يمكن للعميل شراء المنتجات أو إرسالها كهدية !  <br>(تتوفر خدمة الإشتراكات المنزلية الفاخرة) </p>
+
+            <div class="media mt-4 rounded shadow p-3">
+  <img src="../../../assets/images/icon1.png"  class="mr-3 " style="width:60px;">
+  <div class="media-body">
+    <h4>عيرسلا ليصوتلا  </h4>
+    <p>ًءاسم 5 لبق تابلطلل مويلا سفنب   </p>
   </div>
-</nav>
-<header>
-    <div class="overlay">
-      <img src="../../../assets/images/bg1.png" class="img-fluid ps1" alt="">
-        <img src="../../../assets/images/bg2.png" class="img-fluid ps2" alt="">
-    </div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="../../../assets/video/beyond.mp4" type="video/mp4">
-    </video>
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
+</div>
+
+
+            <div class="media mt-3 rounded shadow p-3">
+  <img src="../../../assets/images/icon2.png"  class="mr-3 " style="width:60px;">
+  <div class="media-body">
+    <h4>عةرخافلا ايادهلا </h4>
+    <p>يملاعلا ايادهلاو تاجتنملا ثدحأ </p>
+  </div>
+</div>
+
+
+            <div class="media mt-3 rounded shadow p-3 mb-4">
+  <img src="../../../assets/images/icon3.png"  class="mr-3 " style="width:60px;">
+  <div class="media-body">
+    <h4>عتاكارتشالا ةمدخ  </h4>
+    <p> تاتابنلاو روهزلل يعوبسا/يرهش/يموي كارتشا   </p>
+  </div>
+</div>
+          </div>
+           <div class="col-md-6">
+             <img src="../../../assets/images/m1.png" class="img-fluid d-block m-auto tab-im" style="width: 80%" alt="">
+           </div>
+        </div>
+
+        <div class="bg-pink mt-4 d-sm-block d-lg-none d-md-none">
          
-          <p class="lead mb-0 pt-3">Hilarious, active, addictive multi-player VR games and <br>
-  purpose-built mixed reality funhouses where friends can compete <br>
-  on the latest VR hardware,affordably</p>
-  <div class="text-center mt-5 pt-5 arrow bounce">
-  <a href="#contact" class="mt-5"><img src="../../../assets/images/arrow.png" class="img-fluid" style="width: 100px" alt=""></a>
-  </div>
+        
+            <div class=" text-center py-4">
+              <h4>يمكنكم تحميل التطبيق من هنا  </h4>
+                <a href=""><img src="../../../assets/images/googleplay.png" class="img-fluid wd-100" style="width: 150px" alt=""></a>
+                  <a href=""><img src="../../../assets/images/app.png" class="img-fluid wd-100" style="width: 141px" alt=""></a>
+            </div>
+          
         </div>
-      </div>
-    </div>
-  </header>
+
+             <div class="bg-pink rounded w-75 m-auto display-none">
+          <div class="row mt-4 ">
+            <div class="col-md-6 pt-5">
+              <img src="../../../assets/images/car.png" class="img-fluid" style="width: 50%" alt="">
+            </div>
+            <div class="col-md-6 text-right pr-5 pt-4">
+              <h4>يمكنكم تحميل التطبيق من هنا  </h4>
+                <a href=""><img src="../../../assets/images/googleplay.png" class="img-fluid wd-100" style="width: 150px" alt=""></a>
+                  <a href=""><img src="../../../assets/images/app.png" class="img-fluid wd-100" style="width: 141px" alt=""></a>
+            </div>
+          </div>
+        </div>
+         </div>
+      </section>
+      <section id="section-2" class="pb-5">
+         <div class="container text-center">
+                 <h2 class="clr-pink">ةنودملا  </h2>
+                 <p>ﺔﻴﻌﻴﺒﻄﻟا رﻮﻫﺰﻟا نع تاروشنملاو تﺎﻟﺎﻘﻤﻟا ﻦﻣ ﺮﻴﺜﻜﻟا كﺎﻨﻫ  <span class="d-block"> هناك الكثير من المقالات والدراسات حول الزهور الطبيعية والنباتات المنزلية وطريقة الاعتناء بها, وأكثر عبر مدونتنا </span></p>
+
+                 <div class="row mt-5 tab display-none">
+                   <div class="col-md-3 mt-5 pt-5 d-no">
+                     <div class="card border-0 shadow-sm text-right mt-5 pt-5 ">
+  <img class="card-img-top img-fluid d-block m-auto" src="../../../assets/images/Vector.png" style="width: 100px">
+  <div class="card-body">
+    <h5 class="card-title">تالاقملا نم ديزملا  </h5>
+ 
+    <a href="#" class="clr-pink"><i class="zmdi zmdi-arrow-left zmdi-hc-fw"></i></a>
+  </div>
+</div>
+                   </div>
+                    <div class="col-md-3">
+                                           <div class="card border-0 shadow-sm text-right">
+  <img class="card-img-top img-fluid" src="../../../assets/images/pic1.png">
+  <div class="card-body">
+    <h5 class="card-title">تDIY ةقاب كسفنب عنصا ايادهلل   </h5>
+ 
   
-  <section id="section-1">
-    <div class="overlay-s ">
-    <img src="../../../assets/images/bg-s2.png" class="img-fluid w-100" alt="">
-    </div>
-    <div class="container text-white">
-      <h2 class="text-white pt-5">WE ARE BEYOND</h2>
-      <p>Breaking the deadlock around the high cost of access 
-  <span class="d-block"> to location based VR, mustering every idea we can to reduce </span>
-  overheads and setup times for licensees.</p>
+  </div>
+</div>
+                    </div>
+
+
+                     <div class="col-md-3">
+                       
+                           <div class="card border-0 shadow-sm text-right">
+  <img class="card-img-top img-fluid" src="../../../assets/images/pic2.png">
+  <div class="card-body">
+    <h5 class="card-title">تDIY ةقاب كسفنب عنصا ايادهلل   </h5>
+ 
   
-  <div class="row mt-4 ">
-    <div class="col-lg-4 mb-3">
+  </div>
+</div>
+                     </div>
+
+                             <div class="col-md-3 db">
+                     <div class="card border-0 shadow-sm text-right pt-5 ">
+  <img class="card-img-top img-fluid d-block m-auto" src="../../../assets/images/Vector.png" style="width: 80px">
+  <div class="card-body">
+    <h5 class="card-title">تالاقملا نم ديزملا  </h5>
+ 
+    <a href="#" class="clr-pink"><i class="zmdi zmdi-arrow-left zmdi-hc-fw"></i></a>
+  </div>
+</div>
+                   </div>
+                      <div class="col-md-3">
+                            <div class="card border-0 shadow-sm text-right">
+  <img class="card-img-top img-fluid" src="../../../assets/images/pic3.png">
+  <div class="card-body">
+    <h5 class="card-title">رياربف رهشل ةرهز ةيده لضفأ   </h5>
+ 
+  
+  </div>
+</div>
+                      </div>
+                 </div>
+
+                 <div class="d-sm-block d-md-none d-lg-none text-right">
+                               <div class="media mt-3 rounded shadow p-3 mb-4">
+  <img src="../../../assets/images/mob1.png"  class="mr-3 " style="">
+  <div class="media-body">
+    <h4>عرياربف رهشل ةرهز ةيده لضفأ </h4>
+   
+  </div>
+</div>
+
+                                               <div class="media mt-3 rounded shadow p-3 mb-4">
+  <img src="../../../assets/images/mob2.png"  class="mr-3 " style="">
+  <div class="media-body">
+    <h4>عرياربف رهشل ةرهز ةيده لضفأ   </h4>
+   
+  </div>
+</div>
+
+
+                              <div class="media mt-3 rounded shadow p-3 mb-4">
+  <img src="../../../assets/images/mob1.png"  class="mr-3 " style="">
+  <div class="media-body">
+    <h4>عرياربف رهشل ةرهز ةيده لضفأ </h4>
+   
+  </div>
+</div>
+
+
+
+                              <div class="media mt-3 rounded shadow p-3 mb-4">
+  <img class="card-img-top img-fluid" src="../../../assets/images/Vector.png" style="width: 50px">
+  <div class="media-body">
+    <h4> تالاقملا نم ديزملا  <i class="zmdi zmdi-arrow-left zmdi-hc-fw clr-pink"></i>  </h4>
+   
+  </div>
+</div>
+
+                 </div>
+         </div>
+      </section>
      
-      <div class="im-p">
-         <img src="../../../assets/images/pict1.png" class="img-fluid d-block m-auto" style="width: 250px" alt="">
-       <div class="ani"> <img src="../../../assets/images/p1.png" class="img-fluid d-block m-auto" alt=""></div>
-        <div class="box">
-        <h3>WIRELESS HEADSETS</h3>
-        <p>We use the latest in 3K wireless HMD technology that utilises inside out tracking. No backpack PCs or cables here.</p>
-      </div>
-      </div>
-  
+      <section id="section-3" class="py-5">
+         <div class="container">
+           <h2 class="clr-pink text-center">ةيديربلا ةرشنلا  </h2>
+           <p class="text-center">.نآلا ةيديربلا انترشن يف كرتشا ، انيدل ةيجيورتلا ضورعلاو ضورعلا ثدحأ توفت ال  </p>
+
+           <form class="form w-50 m-auto">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend border-0">
+      <span class="input-group-text bg-pink ">نآلا كرتشا  </span>
     </div>
-    <div class="col-lg-4 mb-3">
-        <div class="im-p">
-       <img src="../../../assets/images/pict2.png" class="img-fluid d-block m-auto a2" style="width: 250px" alt="">
-       <div class="ani a2"> <img src="../../../assets/images/p2.png" class="img-fluid d-block m-auto" alt=""></div>
-        <div class="box">
-        <h3>STRETCHSPACE</h3>
-        <p>Make small spaces feel vast using our proprietary StetchSpace technology and earn a higher profit per sqm.</p>
-      </div>
-      </div>
-    </div>
-    <div class="col-lg-4 mb-3">
-        <div class="im-p">
-        <img src="../../../assets/images/pict3.png" class="img-fluid d-block m-auto a3" style="width: 250px" alt="">
-       <div class="ani a3"> <img src="../../../assets/images/p3.png" class="img-fluid d-block m-auto" alt=""></div>
-        <div class="box">
-        <h3>QUICK SETUP</h3>
-        <p>Easy to assemble internal walls and no complex tracking systems greatly reduces installation set up time</p>
-      </div>
-      </div>
-    </div>
-  
-  
-  
-  
-  
-  
-  
-      <div class="col-lg-4 mb-3">
-      <div class="im-p">
-           <img src="../../../assets/images/pict4.png" class="img-fluid d-block m-auto a4" style="width: 250px" alt="">
-       <div class="ani a4"> <img src="../../../assets/images/p4.png" class="img-fluid d-block m-auto" alt=""></div>
-        <div class="box">
-        <h3>COMPETITIVELY PRICED</h3>
-        <p>With a great ROI and monthly 
-  revenue our technology stack and content makes setting up super affordable</p>
-      </div>
-      </div>
-  
-    </div>
-    <div class="col-lg-4 mb-3">
-        <div class="im-p m-top">
-           <img src="../../../assets/images/pict5.png" class="img-fluid d-block m-auto a5" style="width: 250px" alt="">
-       <div class="ani a5"> <img src="../../../assets/images/p5.png" class="img-fluid d-block m-auto" alt=""></div>
-        <div class="box">
-        <h3 class="mt-3">FAMILY FRIENDLY</h3>
-        <p>No zombies, guns or blood. Just wild, wireless, friendly fun guaranteed to make you <br>smile.</p>
-      </div>
-      </div>
-    </div>
-    <div class="col-lg-4 mb-3">
-        <div class="im-p">
-           <img src="../../../assets/images/pict6.png" class="img-fluid d-block m-auto a6" style="width: 250px" alt="">
-       <div class="ani a6"> <img src="../../../assets/images/p6.png" class="img-fluid d-block m-auto" alt=""></div>
-        <div class="box">
-        <h3 class="mt-n2">MULTIPLAYER</h3>
-        <p>4 v 4 highly replayable games gets more people through the door. The ultimate in social VR gaming.</p>
-      </div>
-      </div>
-    </div>
-  </div>
-    </div>
-  
-      
-  
-  </section>
-  
-  
-  <section id="section-2" class="">
-    <div class="container text-white">
-      <h2 class="mt-5 pt-5">LOCATION DASHBOARD</h2>
-      <p>Easily manage your player bookings and payments</p>
-      <div class="row mt-5">
-        <div class="col-lg-6 pt-5 mt">
-          <img src="../../../assets/images/picm1.png" class="img-fluid d-block m-auto" alt="">
-        </div>
-           <div class="col-lg-6">
-             <div class="row">
-               <div class="col-lg-6 mb-3">
-                 <div class="im-p">
-                   <img src="../../../assets/images/b1.png" class="img-fluid d-block m-auto" alt="">
-                   <div class="caption">
-                     <h3 class="pl-4">TAKE PAYMENT</h3>
-                     <p class="pl-5 pr-2">Fully integrated payment gateway using Stripe or custom solutions 
-  available</p>
-                   </div>
-                 </div>
-               </div>
-                <div class="col-lg-6 mb-3">
-                   <div class="im-p">
-                   <img src="../../../assets/images/b2.png" class="img-fluid d-block m-auto" alt="">
-                   <div class="caption">
-                     <h3 class="pl-4">MANAGE BOOKINGS</h3>
-                     <p class="pl-5 ">Receive and manage bookings in house and via player app</p>
-                   </div>
-                 </div>
-                </div>
-                    
-  
-  
-                    <div class="col-lg-6 mb-3">
-                 <div class="im-p">
-                   <img src="../../../assets/images/b3.png" class="img-fluid d-block m-auto" alt="">
-                   <div class="caption tp">
-                     <h3 class="pl-4">TRACK CASHFLOW</h3>
-                     <p class="pl-5 ">Realtime cashflow management data</p>
-                   </div>
-                 </div>
-               </div>
-                <div class="col-lg-6 mb-3">
-                   <div class="im-p">
-                   <img src="../../../assets/images/b4.png" class="img-fluid d-block m-auto" alt="">
-                   <div class="caption">
-                     <h3 class="pl-4">PRODUCT ANALYTICS</h3>
-                     <p class="pl-5 pr-3 ">Realtime product analytics to give you instant user play data</p>
-                   </div>
-                 </div>
-                </div>
-  
-             </div>
-           </div>
-      </div>
-    </div>
-    <img src="../../../assets/images/bgp.png" class="w-100 mt-n5" alt="">
-  </section>
-  
-  
-  <section id="section-3">
-    <div class="container text-white">
-      <h2>MOBILE PLAYER APP</h2>
-      <p>Integrated player app that lets users book, customise and
-  <span class="d-block"> share content with friends</span></p>
-  <div class="row mt-5 text-center">
-    <div class="col-lg-3 mb-2">
-         <div class="im-p">
-           <img src="../../../assets/images/m1.png" class="img-fluid d-block m-auto" alt="">
-           <div class="caption-m">
-             <h3>BOOK GAMES</h3>
-             <p>Check venue availability and book your games</p>
-           </div>
-         </div>
-    </div>
-     <div class="col-lg-3 mb-2">
-        <div class="im-p">
-           <img src="../../../assets/images/m2.png" class="img-fluid d-block m-auto" alt="">
-           <div class="caption-m">
-             <h3>CUSTOMISE PLAYER</h3>
-             <p>Customise your player avatar with fun new items</p>
-           </div>
-         </div>
-     </div>
-      <div class="col-lg-3 mb-2">
-         <div class="im-p">
-           <img src="../../../assets/images/m3.png" class="img-fluid d-block m-auto" alt="">
-           <div class="caption-m">
-             <h3>AUTO LOGIN</h3>
-             <p>Automatic venue login on arrival using iBeacons</p>
-           </div>
-         </div>
-      </div>
-  
-       <div class="col-lg-3 mb-2">
-         <div class="im-p">
-           <img src="../../../assets/images/m4.png" class="img-fluid d-block m-auto" alt="">
-           <div class="caption-m">
-             <h3>SHARE CONTENT</h3>
-             <p>Share game content with your friends to social </p>
-           </div>
-         </div>
-      </div>
-  </div>
-    </div>
-  </section>
-  
-  <section id="section-4">
-    <img src="../../../assets/images/bg-p.png" class="w-100" alt="">
-    <div class="overlay-p">
-    <div class="container text-center text-white">
-      <h2>OUR PEOPLE</h2>
-      <p class="pb-5">It’s just one of those things where the stars align, one great mind attracts another, 
-  <span class="d-block">birds of a feather flock together and suddenly you have enough experience, </span>
-  attitude, ethics and ability to power a game changer.</p>
-  
-  <div class="row mt-5">
-    <div class="col-lg-4 mb-3" *ngFor='let list of teamlist'>
-      <div class="bg-p">
-        <div class="bg-av">
-        <img src="{{imgUrl}}{{list.profile_picture}}"
-         class="img-fluid d-block m-auto " style="width: 200px" alt=""></div>
-        <h3 class="mt-n5">{{list.name}}</h3>
-        <p>{{list.designation}}</p>
-        <p  class="">{{list.description}}</p>
-      </div>
-    </div>
+    <input type="text" class="form-control border-right-0" placeholder="ينورتكلإلا كديرب لخدأ  ">
    
-  
-  </div>
-  
- 
-  </div>
+      <div class="input-group-append">
+      <span class="input-group-text bg-white border-left-0"> <i class="fa fa-envelope-o clr-pink" aria-hidden="true"></i></span>
     </div>
+  </div>
+</form>
+
+         </div>
+      </section>
+ 
+
+
     
-   
-  </section>
-  <footer id='footer'>
-    <img src="../../../assets/images/bg-bottom.png" class="w-100  " alt="">
- <div class="container text-white">
-   <div class="row ne-m mb-5">
-     <div class="col-lg-6 ">
-       <form action="" class="form px-4 pt-5 pb-4">
-         <div class="row">
-     <div class="col-lg-6">
-       <input type="text" class="form-control" placeholder="Name">
-     </div>
-     <div class="col-lg-6">
-       <input type="email" class="form-control" placeholder="Email">
-     </div>
-     <div class="col-lg-12 mt-3">
-           <textarea class="form-control" id="" placeholder="Message" rows="3"></textarea>
-     </div>
- 
-   </div>
-  <button type="button" class="btn btn-primary btn-block mt-3 py-2">Send</button>
-       </form>
-     </div>
-      <div class="col-lg-6">
-        <h2>GET IN TOUCH</h2>
-        <p>This email looks relativity insignificant but this humble address is a mighty crossroad, between the status quo, and your role in the future of entertainment, decisions decisions…</p>
-      </div>
-   </div>
- </div>
- <img src="../../../assets/images/line.png" class="img-fluid" alt="">
- <div class="container">
-   <div class="row py-4">
-     <div class="col-lg-6">
-       <div class="social">
-         <a href="#" class="fa fa-facebook pl-4"></a>
-         <a href="#" class="fa fa-instagram"></a>
-         <a href="#" class="fa fa-twitter"></a>
-         <a href="#" class="fa fa-youtube"></a>
-       </div>
-     </div>
-       <div class="col-lg-6">
-         <p class="text-right">2019 © Copyrights Beyond Studio LTD</p>
-       </div>
-   </div>
- </div>
-   </footer>
-  
+      <!-- =================================Footer================================= -->
+    
+      <footer id="footer" class="">
+         <div class="container">
+          <div class="bg-white box">
+            <div class="row text-right">
+              <div class="col-md-3">
+                <a href="" class="display-none"><img src="../../../assets/images/logo.png" class="img-fluid" alt=""></a>
+                   <a href="" class="d-sm-block d-lg-none d-md-none"><img src="../../../assets/images/mlogo.png" class="img-fluid d-block m-auto" alt=""></a>
+                <div class="pt-2 bg-lightpink">
+                  <a href="" class="text-white d-block">sales@tulpan.shop <i class="fa fa-envelope-o ml-2" aria-hidden="true"></i></a>
+                  <a href="" class="text-white d-block">+966-59-8899133<i class="fa fa-mobile-phone ml-4" aria-hidden="true"></i></a>
+                  <div class="media">
+  <div class="media-body text-white">
+  Saudi Arabia (Riyadh, Jeddah, Dammam, Khobar, Madinah, Ahsa, Buraidah, Abha, Tabuk)
+  </div>
+  <i class="fa fa-map-marker ml-3 text-white" aria-hidden="true"></i>
+</div>
+                  <a href="" class="text-white d-block"></a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="display-none">
+                <h5 class="text-white pt-5">تامولعملا  </h5>
+                <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; > </a>
+                  <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; > </a>
+                    <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; > </a>
+
+                    </div>
+                    <div class="d-sm-block d-md-none d-lg-none my-2 footer-form">
+                      <select name="" id="" class="form-control">
+                        <option value="">تامولعملا  </option>
+                         <option value="">تامولعملا  </option>
+                          <option value="">تامولعملا  </option>
+                      </select>
+                    </div>
+              </div>
+              <div class="col-md-3">
+                 <div class="display-none">
+                <h5 class="text-white pt-5">تامولعملا  </h5>
+                  <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; > </a>
+                    <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; > </a>
+                      <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; > </a>
+                    </div>
+                         <div class="d-sm-block d-md-none d-lg-none my-2 footer-form">
+                      <select name="" id="" class="form-control">
+                        <option value="">تامولعملا  </option>
+                         <option value="">تامولعملا  </option>
+                          <option value="">تامولعملا  </option>
+                      </select>
+                    </div>
+              </div>
+              <div class="col-md-3">
+                 <div class="display-none">
+                <h5 class="text-white pt-5">تامولعملا  </h5>
+                  <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; > </a>
+                    <a href="" class="d-block text-white"> ليصوتلا تامولعم  &nbsp; > </a>
+                      <a href="" class="d-block text-white">ليصوتلا تامولعم  &nbsp; >  </a>
+                    </div>
+
+                         <div class="d-sm-block d-md-none d-lg-none my-2 footer-form">
+                      <select name="" id="" class="form-control">
+                        <option value="">تامولعملا  </option>
+                         <option value="">تامولعملا  </option>
+                          <option value="">تامولعملا  </option>
+                      </select>
+                    </div>
+              </div>
+            </div>
+          </div>
+             <p class="text-white text-center py-4">2020 نابلوت ةيراجتلا ةمالعلل ةظوفحم قوقحلا عيمج  </p>
+         </div>
+      </footer>
+
+     
+        <!-- =========================
+         End
+         ============================== -->
+      <!-- jQuery -->
+      <script src="../../../assets/js/jquery-3.3.1.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="../../../assets/js/bootstrap.min.js"></script>
+    
+      <!-- Bootstrap Core JavaScript -->
+          <script type="text/javascript">
+         $(function () {
+         $(document).scroll(function () {
+           var $nav = $(".fixed-top");
+           $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+         });
+         });
+      </script>
+   </body>
+</html>
